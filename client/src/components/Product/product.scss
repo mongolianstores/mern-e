@@ -1,0 +1,56 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCCCCC;
+    
+& img{
+    height: 250px;
+    object-fit:contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+&-body{
+    margin: 20px 0;
+    padding: 5px;
+    color: black;
+}
+&-price{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+&-description{
+    margin-bottom: 15px;
+    padding: 5px;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    height: 2rem;
+    &:active, :hover{
+        color: rgba(0, 0, 0, 0.877);
+        text-decoration: underline;
+    }
+}
+
+&-price{
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    &:active, :hover{
+        color: rgba(0, 0, 0, 0.877);
+        text-decoration: underline;
+    }
+}
+}
+
+
+.Link{
+    outline: none;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    &:active, :hover{
+        color: rgba(0, 0, 0, 0.877);
+        text-decoration: underline;
+    }
+}

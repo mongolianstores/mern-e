@@ -1,0 +1,9 @@
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    grid-gap: 3rem;
+    align-items: center;
+    padding: 25px;
+    align-items: center;
+}

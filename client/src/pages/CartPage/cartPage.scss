@@ -1,0 +1,19 @@
+.cartPage-container{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+.product-container{
+    display: flex;
+    & img{
+        height: 250px;
+        object-fit:contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.prd{
+    display: flex;
+    align-items: center;
+}
