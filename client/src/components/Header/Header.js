@@ -6,7 +6,7 @@ import {BiLogOut} from 'react-icons/bi'
 import {useDispatch, useSelector} from 'react-redux';
 import styled from 'styled-components';
 import { signOutUser } from '../../Redux/actions/userActions/userActions.js';
-
+import {FiUser} from 'react-icons/fi';
 import {useHistory} from 'react-router-dom';
 
 
@@ -52,9 +52,15 @@ const Header = () => {
                     <AiOutlineUser/> Sign In
                 </LinkTo>
                     ):(
+                        <div style={{display:"flex", alignItems:"center"}}>
+                <LinkTo style={{marginRight:"15px"}} to="/profile" >
+                    <FiUser/> Profile
+                </LinkTo>
                 <HeaderComp onClick={signOutHandler}>
                     <BiLogOut/> Log Out
                 </HeaderComp>
+              
+                </div>
                     )}
                    
                 </Div>

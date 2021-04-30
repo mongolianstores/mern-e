@@ -33,6 +33,7 @@ export const LinkTo = styled(LinkR)`
     color:darkgray;
     text-decoration: none;
      font-size: 1.4rem;
+     
    &:hover{
        color: white;
    }

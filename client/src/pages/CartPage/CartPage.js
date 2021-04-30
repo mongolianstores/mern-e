@@ -4,7 +4,7 @@ import {cartAddItem, cartRemove} from '../../Redux/actions/cartActions/cartActio
 import {FiTrash} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
 import { CartEmpty, CartItem, CartItemsWrapper, CARTMAINWRAPPER, CheckOutButton, IMG, SubTotal } from './styles.cartpage';
-
+import './cartPage.css'
 
 const CartPage = ({match, location, history}) => {
 

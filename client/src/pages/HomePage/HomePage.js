@@ -1,11 +1,10 @@
 import React, { useEffect} from 'react'
 import Product from '../../components/Product/Product';
-import './homepage.scss';
 import MessageBox from '../../components/MessageBox/MessageBox';
 import LoadingBox from '../../components/LoadingBox/LoadingBox';
 import {useDispatch, useSelector} from 'react-redux';
 import {listProducts} from '../../Redux/actions/productActions/productActions';
-
+import './homepage.css'
 
 
 

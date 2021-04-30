@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Rating from '../Rating/Rating';
-import './product.scss';
+import './product.css';
 
 
 const Product = ({product}) => {
@@ -9,17 +9,17 @@ const Product = ({product}) => {
         <div>
              <div key={product._id} className="card">
                             <Link to={`/product/${product._id}`}>
-                                <img src={product.image} alt={product.name}/>
+                                <img className='imga' src={product.image} alt={product.name}/>
                             </Link>
 
-                            <div className="card-body">
+                            <div className="body">
                                 <Link className='Link'
                                 to={`/product/${product._id}`}>
                                     <h2>{product.name}</h2>
                                 </Link>
                             </div>
 
-                        <div className="card-description">
+                        <div className="description">
                             <Link className="Link" to={`/product/${product._id}`}>
                             <span>{product.description}</span>
                             </Link>
@@ -33,7 +33,7 @@ const Product = ({product}) => {
             />
 
 
-                            <div className="card-price">
+                            <div className="price">
                                 <span>${product.price}</span>
                             </div>
                         </div>

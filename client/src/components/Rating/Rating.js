@@ -1,5 +1,5 @@
 import React from 'react';
-import './rating.scss';
+import './rating.css';
 
 
 const Rating = ({numReviews, rating}) => {
